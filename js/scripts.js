@@ -8,7 +8,7 @@ setTimeout(function () {
 setTimeout(function () {
   inside.getElementsByClassName("branding21")[0].style.display = "none";
   console.log("desired command executed");
-}, 1000);
+}, 3000);
 
 //iframe locator for JS Dom
 
