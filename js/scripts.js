@@ -1,5 +1,10 @@
 console.log("Top of the script");
-
+//desktop fast load ad banner removal
+setTimeout(function () {
+  inside.getElementsByClassName("branding21")[0].style.display = "none";
+  console.log("desired command executed");
+}, 1000);
+//mobile slow load ad banner removal
 setTimeout(function () {
   inside.getElementsByClassName("branding21")[0].style.display = "none";
   console.log("desired command executed");
