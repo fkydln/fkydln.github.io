@@ -1,3 +1,18 @@
+console.log("Top of the script");
+
+setTimeout(function () {
+  inside.getElementsByClassName("branding21")[0].style.display = "none";
+  console.log("desired command executed");
+}, 100);
+
+//iframe locator for JS Dom
+
+function iframeRef(frameRef) {
+  return frameRef.contentWindow
+    ? frameRef.contentWindow.document
+    : frameRef.contentDocument;
+}
+var inside = iframeRef(document.getElementById("220331650588050"));
 /*!
  * Start Bootstrap - Freelancer v7.0.5 (https://startbootstrap.com/theme/freelancer)
  * Copyright 2013-2021 Start Bootstrap
@@ -52,4 +67,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 //Remove the ad on the contact form
 
-document.querySelectorAll(".branding21")[0].style.display = "none";
+// document.querySelectorAll(".branding21")[0].style.display = "none";
+
+//iframe locator for JS Dom
+
+// function iframeRef(frameRef) {
+//   return frameRef.contentWindow
+//     ? frameRef.contentWindow.document
+//     : frameRef.contentDocument;
+// }
+// var inside = iframeRef(document.getElementsByTagName("iframe"));
+
+function iframeRef(frameRef) {
+  return frameRef.contentWindow
+    ? frameRef.contentWindow.document
+    : frameRef.contentDocument;
+}
+
+var inside = iframeRef(document.getElementById("one"));
+
+console.log("end of the form is working");
