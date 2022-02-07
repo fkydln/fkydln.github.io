@@ -1,3 +1,4 @@
+// Debugging
 console.log("Top of the script");
 //desktop fast load ad banner removal
 setTimeout(function () {
@@ -18,14 +19,8 @@ function iframeRef(frameRef) {
     : frameRef.contentDocument;
 }
 var inside = iframeRef(document.getElementById("220331650588050"));
-/*!
- * Start Bootstrap - Freelancer v7.0.5 (https://startbootstrap.com/theme/freelancer)
- * Copyright 2013-2021 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
- */
-//
+
 // Scripts
-//
 
 window.addEventListener("DOMContentLoaded", (event) => {
   // Navbar shrink function
@@ -83,12 +78,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // }
 // var inside = iframeRef(document.getElementsByTagName("iframe"));
 
-function iframeRef(frameRef) {
-  return frameRef.contentWindow
-    ? frameRef.contentWindow.document
-    : frameRef.contentDocument;
-}
+// function iframeRef(frameRef) {
+//   return frameRef.contentWindow
+//     ? frameRef.contentWindow.document
+//     : frameRef.contentDocument;
+// }
 
-var inside = iframeRef(document.getElementById("one"));
-
-console.log("end of the form is working");
+// var inside = iframeRef(document.getElementById("one"));
