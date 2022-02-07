@@ -3,7 +3,7 @@ console.log("Top of the script");
 setTimeout(function () {
   inside.getElementsByClassName("branding21")[0].style.display = "none";
   console.log("desired command executed");
-}, 100);
+}, 1000);
 
 //iframe locator for JS Dom
 
