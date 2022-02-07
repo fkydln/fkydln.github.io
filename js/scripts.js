@@ -1,27 +1,4 @@
-// Debugging
-console.log("Top of the script");
-//desktop fast load ad banner removal
-setTimeout(function () {
-  inside.getElementsByClassName("branding21")[0].style.display = "none";
-  console.log("desired command executed");
-}, 1000);
-//mobile slow load ad banner removal
-setTimeout(function () {
-  inside.getElementsByClassName("branding21")[0].style.display = "none";
-  console.log("desired command executed");
-}, 3000);
-
-//iframe locator for JS Dom
-
-function iframeRef(frameRef) {
-  return frameRef.contentWindow
-    ? frameRef.contentWindow.document
-    : frameRef.contentDocument;
-}
-var inside = iframeRef(document.getElementById("220331650588050"));
-
-// Scripts
-
+//Web Scripts
 window.addEventListener("DOMContentLoaded", (event) => {
   // Navbar shrink function
   var navbarShrink = function () {
@@ -65,23 +42,21 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-//Remove the ad on the contact form
-
-// document.querySelectorAll(".branding21")[0].style.display = "none";
-
 //iframe locator for JS Dom
+function iframeRef(frameRef) {
+  return frameRef.contentWindow
+    ? frameRef.contentWindow.document
+    : frameRef.contentDocument;
+}
+var inside = iframeRef(document.getElementById("220331650588050"));
 
-// function iframeRef(frameRef) {
-//   return frameRef.contentWindow
-//     ? frameRef.contentWindow.document
-//     : frameRef.contentDocument;
-// }
-// var inside = iframeRef(document.getElementsByTagName("iframe"));
-
-// function iframeRef(frameRef) {
-//   return frameRef.contentWindow
-//     ? frameRef.contentWindow.document
-//     : frameRef.contentDocument;
-// }
-
-// var inside = iframeRef(document.getElementById("one"));
+//desktop fast load ad banner removal
+setTimeout(function () {
+  inside.getElementsByClassName("branding21")[0].style.display = "none";
+  console.log("desired command executed");
+}, 1000);
+//mobile slow load ad banner removal
+setTimeout(function () {
+  inside.getElementsByClassName("branding21")[0].style.display = "none";
+  console.log("desired command executed");
+}, 3000);
