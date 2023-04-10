@@ -1,0 +1,42 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(0, 14, 42, 0.906);
+  }
+  .container {
+    background-color: steelblue;
+    border-radius: 10%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    padding: 5%;
+    margin: 3%;
+    
+  }
+  h1 {
+    color: wheat;
+  }
+  p {
+    color: white;
+  }
+  .borderOutside{
+    border: 1px solid black;
+  }
+table{
+    border-collapse: collapse;
+}
+.submitButton{
+    background-color: rgba(215, 28, 66, 0.839);
+    color: white;
+}
+#theSwitchEmail{
+display: none;
+}
+#captionMaxEmail{
+    display: none;
+}

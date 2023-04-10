@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Event Book - Event Keeper</title>
+  </head>
+  <body>
+    <h1>Welcome to the Event Email Generator</h1>
+    <p>
+      Please submit your event using the form below to generate proper emails.
+    </p>
+    <div class="container">
+      <div>
+        <button id="switchFormButton">The Switch Form</button>
+        <button id="captionFormButton">CaptionMax Form</button>
+      </div>
+      <div class="container switchFormContainer" style="display: none">
+        <!-- The Switch Form -->
+        <form onsubmit="return false">
+          <table>
+            <tr>
+              <th>The Switch Booking Details</th>
+            </tr>
+            <tr>
+              <td><label for="eventName">Event Name:</label></td>
+              <td><input type="text" id="eventName" /></td>
+            </tr>
+            <tr>
+              <td><label for="eventDate">Event Date:</label></td>
+              <td><input type="date" id="eventDate" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="windowOpenSwitch">Window Open Time (EST):</label>
+              </td>
+              <td><input type="text" id="eventTier" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="windowCloseSwitch">Window Close Time (EST):</label>
+              </td>
+              <td><input type="text" id="eventTier" /></td>
+            </tr>
+            <tr>
+              <td><label for="hlaD05">Source:</label></td>
+              <td><input type="radio" name="source" value="hlaD05" />hlaD05</td>
+            </tr>
+            <tr>
+              <td><label for="hlaD05"></label></td>
+              <td><input type="radio" name="source" value="hlaD06" />hlaD06</td>
+            </tr>
+
+            <tr>
+              <td><label for="eventVendors">Vendors Used:</label></td>
+              <td>
+                <input type="checkbox" name="theSwitch" id="theSwitch" />
+                <label for="theSwitch">The Switch</label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="checkbox" name="captionMax" id="captionMax" />
+                <label for="captionMax">3Play Media</label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input
+                  class="submitButton"
+                  type="button"
+                  value="Submit"
+                  onclick="submitForm()"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="container captionFormContainer" style="display: none">
+        <!-- CaptionMax Form -->
+        <form onsubmit="return false">
+          <table>
+            <tr>
+              <th>CaptionMax Booking Details</th>
+            </tr>
+            <tr>
+              <td><label for="eventName">Event Name:</label></td>
+              <td><input type="text" id="eventName" /></td>
+            </tr>
+            <tr>
+              <td><label for="eventDate">Event Date:</label></td>
+              <td><input type="date" id="eventDate" /></td>
+            </tr>
+            <tr>
+              <td><label for="eventTier">Event Tier:</label></td>
+              <td><input type="text" id="eventTier" /></td>
+            </tr>
+
+            <tr>
+              <td><label for="eventVendors">Vendors Used:</label></td>
+              <td>
+                <input type="checkbox" name="theSwitch" id="theSwitch" />
+                <label for="theSwitch">The Switch</label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="checkbox" name="captionMax" id="captionMax" />
+                <label for="captionMax">3Play Media</label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input
+                  class="submitButton"
+                  type="button"
+                  value="Submit"
+                  onclick="submitForm()"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <div class="container" id="theSwitchEmail"></div>
+    <div class="container" id="captionMaxEmail"></div>
+  </body>
+</html>
